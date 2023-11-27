@@ -12,7 +12,26 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(elevation: 0.0),
+      appBar: AppBar(
+        elevation: 0.0,
+        backgroundColor: Colors.white,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(top: 20.0, right: 20.0),
+            child: InkWell(
+              onTap: () {},
+              child: const Text(
+                "رد کردن",
+                style: TextStyle(
+                    color: Color.fromARGB(181, 158, 158, 158),
+                    fontFamily: "dana",
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
